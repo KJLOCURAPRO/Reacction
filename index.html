@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+        <title>Reaction</title>
+        <link rel="stylesheet" href="src/style.css" type="text/css" media="all" />
+    </head>
+    <body>
+        
+        
+        
+        <div class="menuInicio">
+            
+            <h1 id="titleMenu">Reaction</h1>
+        
+        <div id="empezar">Empezar</div>
+        
+        <div id="comoJugar">Como Jugar</div>
+        
+        </div>
+        
+        <div class="menuInfo">
+            
+            <h1 id="titleMenuInfo">Como Jugar:</h1>
+            
+            <p id="textComoJugar">Este juego trata sobre practicar,probar o mejorar tu tiempo de reaccion. <br> Lo unico que tienes que hacer es esperar a que el circulo rojo que aparecera en pantalla se ponga en color verde cuando pase esto, es el momento inmediato para darle un click.</p>
+            
+            <button id="infoAccepto">OK!</button>
+            
+        </div>
+        
+        
+        <div class="game">
+            
+            <p id="ready">¿Estas listo?</p>
+            
+            <div id="circle"></div>
+            
+<div class="infoReaccion">
+    <h3>Historial de Tiempos:</h3>
+    <ul id="timesList"></ul>
+    <p>Mejor Tiempo: <span id="bestTime">N/A</span></p>
+    <p>Intentos: <span id="attempts">0</span></p>
+</div>
+
+<!-- Nueva pantalla de Game Over -->
+<div class="menuGameOver" style="display: none;">
+    <h1 style="color: red;">GAME OVER</h1>
+    <p>Le has dado al circulo cuando estaba en rojo.</p>
+    <button id="restarBtn" onclick="location.reload()">Reintentar</button>
+</div>
+        </div>
+        
+    </body>
+    
+    <script src="js/main.js"></script>
+    
+</html>
